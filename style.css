@@ -1,0 +1,487 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: auto;
+    
+}
+.goods {
+    position: relative;
+    
+    font-family: PingFang SC,Microsoft YaHei,sans-serif,Arial;
+    background: #fff;
+}
+.goods-navbar{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+.nav-items{
+    display:flex;
+    justify-content:space-around;
+    margin-right:124px;
+    font-family: "PingFang SC","Microsoft YaHei",sans-serif,Arial;
+    font-size:12px;
+    color:#9B9B9B;
+    
+
+}
+.nav-title{
+    margin-left:40px;
+    font-size:14px;
+    color:#000000;
+    font-family: "PingFang SC","Microsoft YaHei",sans-serif,Arial;
+    font-weight: bold;
+}
+.item2{
+    margin-right:50px;
+    margin-left:70px;
+    
+}
+.item3{
+    margin-right:-100px;
+}  
+.goods-color {
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 0.24rem;
+    margin-right: 0.1rem;
+}
+.heading{
+    font-weight:bold;
+    font-size:24px;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif,Arial;
+}
+.red-price{
+    color:#FE122F;
+    margin-top:10px;
+}
+.button-1{
+background:#FFC915;
+width:44px;
+height:20px;
+color:blcak;
+font-size:14px;
+border-radius: 4px;
+
+}
+.button1{
+    display:flex;
+    margin-top:10px;
+}
+.button-2{
+background:#fff4db;
+width:89px;
+height:20px;
+color:#947434;
+font-size:14px;
+border-radius: 4px;
+margin-left:10px;
+}
+.ullist-1{
+    list-style-type: circle;
+    line-height:2;
+    margin-top:10px;
+    font-size: 14px;
+}
+.fa-solid{
+    color:gray;
+}
+.icon-1{
+    width:255px;
+    height:52px;
+    border:1px solid black;
+    color:black;
+   padding: 12px;
+   text-align: center;
+    border-radius:10px;
+    font-size:14px;
+    
+    
+}
+
+.icon-2{
+    width:255px;
+    height:52px;
+    background:#F9F9F9;
+    color:black;
+   margin-left: 12px;
+   padding: 12px;
+   text-align: center;
+    border-radius:10px;
+    font-size:14px;
+    border: none;
+    
+}
+.color-box-flex{
+display:flex;
+margin-right:10px;
+justify-content: space-between;
+}
+.color-box h3{
+font-size:16px;
+color:black;
+font-weight: bold;
+margin-top:15px;
+border-radius:8px;
+}
+.storage-box h3{
+font-size:16px;
+color:black;
+font-weight: bold;
+margin-top:15px;
+border-radius:8px;
+}
+.storage_button
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+.button-3{
+    width:255px;
+    height:52px;
+    color:black;
+    margin-top:10px;
+    border-radius:10px;
+    font-size:14px;
+    border:1px solid black;
+    padding: 12px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+.button-4
+{
+    width:255px;
+    height:52px;
+    color:black;
+    margin-top:10px;
+    margin-left: 12px;
+    border-radius:10px;
+    font-size:14px;
+    background-color: rgb(102, 102, 102,0.1);
+    text-align: center;
+    padding: 12px;
+    border:none ;
+    
+    
+    
+}
+.Quantity h3{
+    font-size:16px;
+    color:black;
+    font-weight: bold;
+    margin-top:15px;
+    border-radius:9px;
+}
+.button-5{
+    width:148px;
+    height:48px;
+    color:black;
+    margin-top:10px;
+    border-radius:12px;
+    font-size:14px;
+    background:#F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 12px;
+}
+form{
+    display:flex;
+    margin-top:15px;
+    overflow: auto;
+   position: absolute;
+}
+.pincode h3{
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    margin-top:20px;
+   }
+   .pincode input{
+       width:300px;
+       height:40px;
+       border:1px solid grey;
+   
+   }
+   .pincode-button{
+       width:130px;
+       height:40px;
+       border-radius:24px;
+       color:white;
+       background-color: black;
+       margin-left:20px;
+       
+   
+   }
+.pincode_input{
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.text-rec h3{
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:50px;
+    margin-left:24px;
+    }
+.carousel-images{
+    display:flex;
+   
+    justify-content: space-evenly;
+    overflow-x: none;
+    margin: 24px;
+    margin-top: 40px;
+    
+   
+}
+.carousel-images::-webkit-scrollbar {
+    display: none;
+}
+
+
+.content-text{
+    font-size:14px;
+    color:#FFF;
+    opacity:.3;
+    margin-left:390px;
+}
+.main-text img{
+    width:36px;
+    height:36px;}
+    .main-text{
+display:flex;
+justify-content: space-around;
+
+}
+.price-text{
+    margin-left:140px;
+}
+
+.details-text span{
+    margin-left:40px;}
+.side-images{
+    display:flex;
+    margin-top:15px;
+}
+.first-div{
+    display:flex;
+    margin-top:35px;
+    justify-content: center;
+}
+.details-part{
+    margin-left:150px;
+    overflow-y: auto;
+    height:650px;
+    z-index:1;
+    
+}
+.details-part::-webkit-scrollbar {
+    display: none;
+}
+.image-1{
+    border-radius:10px;
+    margin-left: 60px;
+}
+.image-2{
+    border-radius:10px;
+    margin-left: 60px;
+}
+.image-price{
+    color:#FE122F;
+    font-size:14px;
+    font-weight: bold;
+    margin-left:35px;
+}
+.each-image h3{
+color:black;
+font-size:16px;
+font-weight:bold;
+}
+
+
+.t-1{
+    font-size:14px;
+    color:black;
+}
+.t-2{
+    font-size:14px;
+    color:#9B9B9B;
+    margin-left:20px;
+}
+.text-nav{
+    display:flex;
+    margin-top:20px;
+    margin-left:40px;
+    margin-bottom:30px;
+
+}
+.second-div{
+    background:#f4f4f5;
+    padding-bottom:.4rem;
+    height:18539px;
+    width:100%;
+}
+.images-card{
+    width:1200px;
+    height:auto;
+    background:white;
+    height:18520px;
+     margin-top:40px;
+}
+
+.footer-text h3{
+    font-size:16px;
+    font-weight:bold;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    margin-left:300px;
+    margin-top:40px;
+}
+.footer-right-flex h3{
+    font-size:24px;
+    font-weight:bold;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    color:#FF0000;
+    margin-right:20px;
+    margin-top:-20px;
+
+}
+.footer-button-1{
+    width:140px;
+    height:40px;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    background:white;
+    border :1px solid black;
+    border-radius:25px;
+    margin-right:10px;
+   
+
+}
+.footer-button-1:hover{
+background:black;
+color:white;
+margin-right:10px;
+margin-top:-20px;
+}
+.footer-button-2{
+    width:140px;
+    height:40px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    background:black;
+    border-radius:25px;
+    margin-right:10px;
+    
+
+
+}
+.footer-right-flex{
+    display:flex;
+    justify-content: right;
+    margin-right:340px;
+    
+}
+.footer-text{
+    display:flex;
+    justify-content: left;
+}
+.footer{
+    width:100%;
+    height:100px;
+    background:white;
+    position:fixed;
+    bottom:0px;
+}
+.fixed-header{
+    margin-top:10px;
+    margin-bottom:30px;
+    width:100%;
+    height:50px;
+    background:white;
+    position:sticky;
+    overflow:hide;
+    top:0;
+    bottom:0;
+    z-index:1;
+}
+.Header-plus{
+    position: relative;
+    z-index:1000;
+}
+ @media (300px<=width<=600px)
+{
+     .nav-title
+    {
+        display: none;
+    }
+
+    .nav-items
+    {
+        text-align: center;
+        margin-left: 30% ;
+    }
+    .first-div
+    {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .image-1
+    {
+        margin-left: 10px;
+    }
+    .image-2
+    {
+        margin-left: 10px;
+    }
+    .details-part
+    {
+        margin-left: 10px;
+        text-align: left;
+    }
+    .text-rec
+    {
+        margin-top:px;
+    }
+    .carousel-images
+    {
+       flex-wrap: wrap;
+       overflow: hidden;
+       margin-left: 10px;
+    }
+    .each-image
+    {
+        flex-direction: column;
+    }
+    .images-card
+    {
+        width: fit-content;
+        margin-left: 10px ;
+    }
+    .footer-section
+    {
+        display: none;
+    }
+    .footer-right-flex
+    {
+        justify-content: left;
+    }
+    .footer-button-1
+    {
+        background-color: #000000;
+        color: white;
+        
+
+    }
+    .footer-button-2
+    {
+        background-color: yellow;
+        color: black;
+    }
+}

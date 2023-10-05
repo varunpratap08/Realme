@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2c00ac6e0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+            <div class="Header-plus flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 my-2" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:pl-0 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Brand</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">App</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">realme VIP</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 lg:dark:hover:text-orange-300">5G</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Login</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">My Order</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:pr-4 lg:py-0 lg:dark:hover:text-orange-300">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white">
+                    <div class="flex flex-wrap justify-between items-center my-3 mx-auto max-w-screen-xl">
+                        <a href="https://www.realme.com/in/" class="flex items-center">
+                            <img src="./Realme_logo.svg" class="mr-3 h-6 sm:h-6" alt="Realme Logo" />
+                        </a>
+                        <div class="flex items-center lg:order-2">
+                            <a href="https://flowbite.com" class="hidden lg:flex items-center">
+                                <img src="./icons8-search-50.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                            </a>
+                            <a href="http://127.0.0.1:5500/raj/login.html" class="lg:hidden items-center">
+                                <div class="flex flex-row justify-center max-w-screen-xl mx-auto">
+                                    <div class="flex-none p-2 w-full">
+                                        <img onclick="showDropdownOptionsUser()" src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                                    </div>
+                                </div>
+                            </a>
+                            <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </div>
+                        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                                <li>
+                                    <a href="./Misbah-2/Event-Page/index.html" class="block py-2 pr-4 pl-3 transition duration-300 ease-in-out text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Realme Festive</a>
+                                </li>
+                                <li>
+                                    <a onmouseover="showDropdownOptionsNewLaunch()" class="cursor-pointer block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">New Launch</a>
+                                </li>
+                                <li>
+                                    <a onmouseover="showDropdownOptionsRealmePhones()" class="cursor-pointer block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">realme Phones</a>
+                                </li>
+                                <li>
+                                    <a onmouseover="showDropdownOptionsNarzoPhones()" class="cursor-pointer block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">narzo phones</a>
+                                </li>
+                                <li>
+                                    <a onmouseover="showDropdownOptionsAudio()" class="cursor-pointer block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Audio</a>
+                                </li>
+                                <li>
+                                    <a onmouseover="showDropdownOptionsTablets()" class="cursor-pointer block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Tablets&Wearables</a>
+                                </li>
+                                <li>
+                                    <a onmouseover="showDropdownOptionsAccessories()" class="cursor-pointer block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    <div id="app" class="goods">
+        <div class="goods-navbar">
+        <!-- <div class="wrapper"> -->
+            <div class="nav-title">
+            <p>realme Pad 2</p>
+            </div>
+            <ul class="nav-items">
+                <li class="item1"><a href="https://image01.realme.net/general/20230802/1690943226429416c9ac9e2ff4db2aafc4a5a23ddd272.jpg.webp">Overview</a></li>
+                <li class="item2"><a href="https://www.realme.com/in/realme-c51/specs">Specs</a></li>
+                <li class="item3"><a href="">R-Pass</a></li>
+            </ul>
+       
+        </div>
+        <hr>
+        <!--first div-->
+        <div class="first-div">
+        <div class="image-part">
+         <div class="main-image">
+            <img class="image-1" src="https://image01.realme.net/general/20231002/16962466371106f138353deb0493a92f7b3ca4e2be3a8.jpg.webp" width="460" height="460">
+         </div>
+         <div>
+        <ul class="side-images">
+            <li><img class="image-2" src="https://image01.realme.net/general/20231002/16962466371106f138353deb0493a92f7b3ca4e2be3a8.jpg.webp" width="84" height="84"></li>
+            <li><img src="https://image01.realme.net/general/20230719/1689757037680b8b2bc53d93d449c89d2470e6480a845.png.webp?width=1440&height=1440&size=261938" width="84" height="84"></li>
+            <li><img src="https://image01.realme.net/general/20230719/16897570336531587d47946bf4382abae5aee49e1daba.png.webp?width=1440&height=1440&size=162709" width="84" height="84"></li>
+            <li><img src="https://image01.realme.net/general/20230719/16897570406843fa029c958df496eb795fc98bae2636b.png.webp?width=1440&height=1440&size=182607" width="84" height="84"></li>
+            <li><img src="https://image01.realme.net/general/20230719/1689757043156f495e4c99d6444279d2e8451d882e97b.png.webp?width=1440&height=1440&size=32675" width="84" height="84"></li>
+    
+        </ul>
+    </div>
+</div>
+    <div class="details-part">
+      <div class="heading">
+        <h3>realme Pad 2</h3>
+        <p class="red-price">₹19,999 </p>
+      </div>
+      <div class="button1">
+        <button class="button-2">Earn Coins</button>
+      </div>
+      <div class="ullist-1">
+        <ul>
+            <li>realme Festive Early Access Sale: Start from 7th Oct.</li>
+            <li>Diwali Offer On 8GB+256GB: Enjoy ₹2,000 Pricing Off | ₹1,500 Bank Offer
+                <span><a href="https://buy.realme.com/in/goods/664">Learn more</a></span>
+            </li>
+            <li>Diwali Offer On 6GB+128GB: Enjoy ₹1,500 Pricing Off | ₹1,500 Bank Offer
+                <span><a href="https://event.realme.com/in/realme-membership-brief">Learn more</a></span>
+            </li>
+            <li>realme VIP Benefit: Earn 2X Coins | 10,000 coins reward on first order 
+                <span><a href="https://event.realme.com/in/realme-membership-brief">Learn more</a></span>
+            </li>
+          
+        </ul>
+    </div>
+       <div class="color-box">
+        <!-- <span class="goods-color" style="background: linear-gradient(328deg, rgb(136, 192, 191) 0px, rgb(124, 203, 198) 100%);"></span> -->
+        <h3>Color</h3>
+        <div class="color-box-flex">
+        <p class="icon-1"><i class="fa-solid fa-circle"></i> Imagination Grey</p>
+        <p class="icon-2"><i class="fa-solid fa-circle"></i>  inspiration Green</p>
+        </div>
+        <div class="storage-box">
+            <h3>Storage</h3>
+            <div class="storage_button">
+            <p class="button-3">LTE 6GB+S128GB</p>
+            <p class="button-4">LTE 8GB+256GB</p>
+        </div>
+        </div>
+        <div class="Quantity">
+            <h3>Quantity</h3>
+            <p class="button-5"><i class="fa-solid fa-minus"></i> 1  <i class="fa-sharp fa-light fa-plus"></i></p>
+        </div>
+      
+    <div class="pincode">
+        <h3>Pincode</h3>
+        <form>
+            <input type="text" placeholder="Enter pincode for delivery details" class="pincode_input"><br>
+            <button class="pincode-button">Check</button>
+        </form>
+    </div>
+
+
+</div>
+</div>
+</div>
+<div class="Recommended">
+<div class="text-rec">
+ <h3>Recommended</h3>
+</div>
+<div class="carousel-images">
+<div class="each-image">
+<img src="https://image01.realme.net/general/20230816/169217909841167ae33fdd1934aee909e24195d52e295.png.webp?width=1440&height=1440&size=463451" width="130" height="130">
+<h3>realme 11x 5G</h3>
+<p class="image-price">₹14,999</p>
+</div>
+<div class="each-image">
+<img src="https://image01.realme.net/general/20230705/16885310238596ce574a854b4450d838f5d7ffb6992d4.png.webp?width=1440&height=1440&size=730480" width="130" height="130">
+<h3>realme narz0 60 5G</h3>
+<p class="image-price">₹17,999</p>
+</div>
+<div class="each-image">
+<img src="https://image01.realme.net/general/20230608/1686196034266e84391de43944a599cdec535212ef4f6.png.webp?width=1440&height=1440&size=710277" width="130" height="130">
+<h3>realme 11 Pro+5G</h3>
+<p class="image-price">₹27,999</p>
+</div>
+<div class="each-image">
+<img src="https://image01.realme.net/general/20230613/1686628327928ed45b2eaa8e0461b84b9ccb33f1a1f14.png.webp?width=1440&height=1440&size=706351" width="130" height="130">
+<h3>realme 11 Pro 5G</h3>
+<p class="image-price">₹23,999</p>
+</div>
+<div class="each-image">
+<img src="https://image01.realme.net/general/20230512/1683873836923.png.webp?width=1440&height=1440&size=544990" width="130" height="130">
+<h3>realne narzo N53</h3>
+<p class="image-price">₹8,999</p>
+</div>
+<div class="each-image">
+    <img src="https://image01.realme.net/general/20230718/16896509943742cfb61eae375450f947cdd15abdae7b1.png.webp?width=1440&height=1440&size=477649" width="130" height="130">
+    <h3>realme C53</h3>
+    <p class="image-price">₹9,999</p>
+   </div>
+ 
+ </div>
+</div>
+<hr>
+  
+    <div class="text-nav">
+        <p class="t-1">Overview</p>
+        <p class="t-2">Reviews(180)</p>
+    </div>
+   
+  <div class="second-div">
+    <div class="images-card">
+        <img src="https://image01.realme.net/general/20230928/1695882526202.jpg?size=180066&width=2280&height=720"width="1140" height="360">
+        <img src="https://image01.realme.net/general/20230718/1689676489960be45f59421774a0c8352121db119ccb4.jpg.webp?width=2280&height=1266&size=966550 width="1140" height="540">
+        <img src="https://image01.realme.net/general/20230718/16896764957004790d47fe41549b49c09728ec5c7ab1a.jpg.webp?width=2280&height=900&size=338680"width="1140" height="550">
+        <img src="https://image01.realme.net/general/20230720/1689830546653fd7d219b17d340bf8d5c19b4cd90d109.jpg.webp?width=2280&height=900&size=375986" width="1140" height="440">
+        <img src="https://image01.realme.net/general/20230720/16898254650861fdf60a6cfce4b4c830e2a3fc375e67f.jpg.webp?width=2280&height=900&size=682317"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896765135109e4456c1268b428c849b4a52d080df26.jpg.webp?width=2280&height=800&size=400411"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676519201a4454d633f624444a63b47861c7b2f0e.jpg.webp?width=2280&height=900&size=607583"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896765251507aae6521e403422ca7d8fa977691a2b2.jpg.webp?width=2280&height=800&size=404601"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/168967653114235a741b128a24eacb7b0ebbd6e765545.jpg.webp?width=2280&height=800&size=875337"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676536321a4e6320411994066bc453f51a4205367.jpg.webp?width=2280&height=800&size=258534"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896765429714977e4fbade84453944f929fc2d67974.jpg.webp?width=2280&height=800&size=970797" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676549183c97842c9da4a42f28fb680549083ebd1.jpg.webp?width=2280&height=800&size=431727" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676555452ed069c79f51941a2b80252b9fecfa6a5.jpg.webp?width=2280&height=800&size=346893" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896765620411191ff9066c5490ea35d20d5c8d20324.jpg.webp?width=2280&height=860&size=462661" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230718/1689676569020596a246fd76f45e4b022b59546c9d4eb.jpg.webp?width=2280&height=800&size=517213" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230718/1689676574832925652b1c2a0434ab9780fc187706513.jpg.webp?width=2280&height=800&size=300912" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230718/16896766130687c681a8ee8394a6ea5c66a74e6b5205d.jpg.webp?width=2280&height=800&size=455717" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896766205933bfdc07c62454080a0e7412ddaf58cfe.jpg.webp?width=2280&height=800&size=503629" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676626836a03c975f80da479faf4c21d8baa0e576.jpg.webp?width=2280&height=800&size=412892" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/168967663371727ca0c09ac99412f91adf909267d2686.jpg.webp?width=2280&height=800&size=909087" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/168967664248568fe3c7f2caf44749050e1738b40b1d4.jpg.webp?width=2280&height=800&size=756223" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230719/168976131921824651861b5e1441e80828604b0820e7a.jpg.webp?width=2280&height=860&size=318022" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896766563398a3fa7ee21f64d46abc89fae24d1dab2.jpg.webp?width=2280&height=850&size=388155" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896766633722eef2bbd735242cca9fa7c9dac7f45c2.jpg.webp?width=2280&height=800&size=697527" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896766692871b24f795561e418583543d2e5723a372.jpg.webp?width=2280&height=800&size=330511" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676676792ac1c52e6e0bc4bc0a69bada7744bd1d6.jpg.webp?width=2280&height=800&size=367371" width="1140" height="370">
+        <img src="https://image01.realme.net/general/20230718/16896766837302df76ed1d93b4d9e9efdc64dba62d998.jpg.webp?width=2280&height=800&size=164885" width="1140" height="370">
+        <img src="https://image01.realme.net/general/20230718/1689676693123fc3b2576ffbc470f9fc4c30abfe6f3a7.jpg.webp?width=2280&height=800&size=448292" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676700094bc9daf86c6714cf5af912bcdafa66385.jpg.webp?width=2280&height=800&size=497069" width="1140" height="480">
+        <img src="https://image01.realme.net/general/20230718/1689676706681d35f5571fda84707990495013c458474.jpg.webp?width=2280&height=800&size=431316" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676712859bb5a1d325a984ecfa7af33561ac5a964.jpg.webp?width=2280&height=800&size=507693" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676719562cf3db53ce1734e58969b7fbb989887ed.jpg.webp?width=2280&height=800&size=818435" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676726404f8274ee0f5eb429b8915bb7781261a02.jpg.webp?width=2280&height=860&size=523936" width="1140" height="334">
+        <img src="https://image01.realme.net/general/20230718/1689676732667da40961663634f0b8996d142f28b52dc.jpg.webp?width=2280&height=860&size=444555" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896767389056c8dda8c002d442b823358690a22dbff.jpg.webp?width=2280&height=840&size=536974" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896767456608b2f95842e91481fb2eabfca531936e4.jpg.webp?width=2280&height=840&size=504276" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676751572c92c1fb91be74862bb1a904f76558909.jpg.webp?width=2280&height=840&size=385997" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896767575624ccd7377b964481e9871a2b7683f9a8b.jpg.webp?width=2280&height=840&size=215077" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676763522e954ed7eb3e6479e8be709ff5d5d0952.jpg.webp?width=2280&height=840&size=413978" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230718/16896767701379dfefc9c974342c98fd6f9ce3155aa03.jpg.webp?width=2280&height=840&size=1045961" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676776255154cab40468d48acbef42670d7a33ee9.jpg.webp?width=2280&height=840&size=232781" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/168967678908299ca15f0ec114121ac27e0579b1f1fa1.jpg.webp?width=2280&height=840&size=894273" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230718/1689676796139c332ccf34dd74fb88c72077dbc2a74ca.jpg.webp?width=2280&height=800&size=987589" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676802853a3a977c46a2e431bb4c201b2a58b6d89.jpg.webp?width=2280&height=800&size=340911" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/16896768090452e7df2a5e4ac4e02adf39a27342cb2af.jpg.webp?width=2280&height=800&size=848286" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676816156d577176c8f26421ab04b3dfb525a34aa.jpg.webp?width=2280&height=800&size=826772" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230718/1689676822641f133c1ff39d24e78a00ab371233244e9.jpg.webp?width=2280&height=800&size=378809" width="1140" height="363">
+        <img src="https://image01.realme.net/general/20230718/16896768291539e512ed8663a4f2db60fe10719a9e3ee.jpg.webp?width=2280&height=800&size=652662" width="1140" height="">
+        <img src="https://image01.realme.net/general/20230718/168967683638029b4eacb74c740fb9a3684aee8825325.jpg.webp?width=2280&height=920&size=526683" width="1140" height="">
+        <img src="https://image01.realme.net/general/20230725/169027753635480a02b4ebf9c4611a83b4f9547777936.jpg.webp?width=2280&height=800&size=220125" width="1140" height="">
+        <img src="https://image01.realme.net/general/20230718/16896768495630935d92cf914400399af4a4993e154ca.jpg.webp?width=2280&height=860&size=366417" width="1140" height="">
+        <img src="https://image01.realme.net/general/20230718/1689676855218435ef8de329844948a3f11cf0afc76e6.jpg.webp?width=2280&height=860&size=593916" width="1140" height="">
+        <img src="https://image01.realme.net/general/20230718/1689676860910c72bc3442ef0420b9348b02b67a51bca.jpg.webp?width=2280&height=1274&size=602443" width="1140" height="">
+    </div>
+  </div>
+   </div>
+   <footer class="bg-white">
+    <div class="max-w-screen-xl mx-auto pt-2">
+        <div class="grid grid-cols-2 grid-rows-2 md:h-28 md:grid-cols-4 md:grid-rows-1 lg:grid-cols-4 lg:grid-rows-1 w-full gap-2 lg:gap-4 md:gap-4">
+            <div class=" md:grow rounded-xl bg-gray-100 py-2 md:py-4 px-2 md:px-3 h-auto">
+                <img src="./box.svg" alt="">
+                <h1 class="text-xs md:text-base  font-bold mb-1">Free Shipping</h1>
+                <p class="text-[10px] md:text-sm font-medium text-gray-500">Available for Orders above ₹500</p>
+            </div>
+            <div class="md:grow rounded-xl bg-gray-100 py-2 md:py-4 px-2 md:px-3   h-auto">
+                <img src="./cod.svg" alt="">
+                <h1 class="text-xs md:text-base  font-bold mb-1" >Cash On Delivery</h1>
+                <p class="text-[10px] md:text-sm font-medium text-gray-500">Supports Payment On Delivery</p>
+            </div>
+            <div class="md:grow rounded-xl bg-gray-100 py-2 md:py-4 px-2 md:px-3   h-auto">
+                <img src="./privacy.svg" alt="">
+                <h1 class="text-xs md:text-base  font-bold mb-1">Secure Payment</h1>
+                <p class="text-[10px] md:text-sm font-medium text-gray-500">realme Store offers various payment options</p>
+            </div>
+            <div class="md:grow rounded-xl bg-gray-100 py-2 md:py-4 px-2 md:px-3   h-auto">
+                <img src="./policy.svg" alt="">
+                <h1 class="text-xs md:text-base  font-bold mb-1">Warrant Policy</h1>
+                <p class="text-[10px] md:text-sm font-medium text-gray-500">realme Store offers various payment options</p>
+            </div>
+        </div>
+        <!--Mobile parfut-->
+        <section class="mt-4 md:hidden block">
+            <div class=" flex flex-row justify-center max-w-screen-xl mx-auto">
+                <div class="flex-none p-2 w-full">
+                    <button onclick="showDropdownOptions1()" class="flex items-center flex-row justify-between w-full px-2 text-gray-700 bg-white border-white focus:outline-none">
+                        <span class="select-none text-xs font-bold">Recommended</span>
+                        <svg id="arrow-down1" class=" w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        <svg id="arrow-up1" class="hidden w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div id="options1" class="hidden py-2 bg-white">
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme narz0 60x 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme C51</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme 11 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme 11x 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme C53</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme narzo 60 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme narzo 60 pro 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme 11 pro 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme 11 pro+ 5G</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">More Phones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center max-w-screen-xl mx-auto">
+                <div class="flex-none p-2 w-full">
+                    <button onclick="showDropdownOptions2()" class="flex items-center flex-row justify-between w-full px-2 text-gray-700 bg-white border-white focus:outline-none">
+                        <span class="select-none text-xs font-bold">Support</span>
+                        <svg id="arrow-down2" class=" w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        <svg id="arrow-up2" class="hidden w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div id="options2" class="hidden py-2 bg-white">
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme care+</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">FAQ</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">User Guide</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Service Centers</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">E-waste Management</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme Coins</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realme Exchange T&C</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">UI 4.0</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center max-w-screen-xl mx-auto">
+                <div class="flex-none p-2 w-full">
+                    <button onclick="showDropdownOptions3()" class="flex items-center flex-row justify-between w-full px-2 text-gray-700 bg-white border-white focus:outline-none">
+                        <span class="select-none text-xs font-bold">About realme</span>
+                        <svg id="arrow-down3" class=" w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        <svg id="arrow-up3" class="hidden w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div id="options3" class="hidden py-2 bg-white">
+                        Our Brand
+                        Newsroom
+                        Retail Store
+                        Declaration
+                        realmeow
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Our Brand</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Newsroom</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Retail Store</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Declaration</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">realmeow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center max-w-screen-xl mx-auto">
+                <div class="flex-none p-2 w-full">
+                    <button onclick="showDropdownOptions4()" class="flex items-center flex-row justify-between w-full px-2 text-gray-700 bg-white border-white focus:outline-none">
+                        <span class="select-none text-xs font-bold">Contact realme</span>
+                        <svg id="arrow-down4" class=" w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        <svg id="arrow-up4" class="hidden w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div id="options4" class="hidden py-2 bg-white">
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300"> HR: HR@realme.com</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">PR: indiapr@realme.com</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Legal: legal.in@realme.com</a>
+                        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Marketing: marketing.in@realme.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <a href="" class="flex justify-between items-center gap-2 py-2 px-6 mt-4 mb-1 border border-black rounded-full">
+                    <i class="fa-solid fa-headset" style="color: #000000;"></i>
+                    <h2 class="text-sm font-bold">CHAT SUPPORT</h2>
+                </a>
+                <p class="text-center text-[10px] font-bold text-gray-500">9:00-21:00, MON-SUN <br>
+                    Including Holidays</p>
+                <h2 class="text-lg font-bold">1800 102 2777</h2>
+                <div class="flex justify-between items-center mt-4 mb-6 gap-4">
+                    <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                    <i class="fa-brands fa-youtube" style="color: #000000;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                </div>
+            </div>
+        </section>
+        <!--Desktop  part-->
+        <div class="hidden md:flex justify-between items-start mt-12 mb-12">
+            <ul>
+                <li>
+                    <h1 class="text-sm font-bold mb-4">Recommended</h1>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme narz0 60x 5G</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme C51</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme 11 5G</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme 11x 5G</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme C53</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme narzo 60 5G</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme narzo 60 Pro 5G</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme 11 pro 5G</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme 11 pro+ 5G</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h1 class="text-sm font-bold mb-4">Support</h1>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme narzo 60x %g</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme VIP</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme care+</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">FAQ</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Service Centers</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme Coins</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">E-Waste Management</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realme Exchange T&C</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">UI 4.0</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h1 class="text-sm font-bold mb-4">About realme</h1>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Our Brand</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Newsroom</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Retail store</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Declaration</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">realmeow</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h1 class="text-sm font-bold mb-4">Contact realme</h1>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">HR: HR@realme.com</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">PR: Indiapr@realme.com</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Legal: legal@realme.com</a>
+                </li>
+                <li class="mb-2">
+                    <a href="" class="hover:text-orange-300 text-xs font-medium text-gray-700">Marketing: marketinff@realme.com</a>
+                </li>
+            </ul>
+            <div class="flex flex-col justify-center items-center">
+                <a href="" class="flex justify-between items-center py-2 px-6 mt-4 mb-1 border-2 border-black rounded-full">
+                    <i class="fa-solid fa-headset" style="color: #000000;"></i>
+                    <h2>CHAT SUPPORT</h2>
+                </a>
+                <p class="text-center text-sm text-gray-500">9:00-21:00, MON-SUN <br>
+                    Including Holidays</p>
+                <h2 class="text-xl font-bold">1800 102 2777</h2>
+                <div class="flex justify-between items-center mt-6 gap-4">
+                    <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                    <i class="fa-brands fa-youtube" style="color: #000000;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="text-center md:text-start">
+            <a href="" class="hover:font-bold hover-text-black text-xs font-medium text-gray-700">India ( English / INR )</a>
+        </div>
+        <hr class="my-4">
+        <div class="flex flex-col md:flex-row-reverse justify-between mt-1">
+            <ul class="flex justify-center mb-4">
+                <li >
+                    <a href="" class=" border-r-2 px-2 text-center text-[10px] md:text-xs font-medium text-gray-500">User Agreement</a>
+                </li>
+                <li>
+                    <a href="" class="border-r-2 px-2  text-[10px] font-medium md:text-xs text-gray-500">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="" class="border-r-2 px-2  text-[10px] md:text-xs font-medium text-gray-500">terms of sales</a>
+                </li>
+                <li>
+                    <a href="" class=" px-2 text-[10px] md:text-xs font-medium text-gray-500">warranty terms</a>
+                </li>
+            </ul>
+            <div class="text-center">
+                <p class="text-[10px] md:text-xs font-medium text-gray-500">© 2018-2023 realme. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-text">
+        
+    </div>
+    <div class="footer-right-flex">
+       
+        <button class="footer-button-1">Add To Cart</button>
+        <button class="footer-button-2">Buy Now</button>
+    </div>
+</footer>
+</body>
+</html>
